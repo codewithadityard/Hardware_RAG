@@ -1,0 +1,39 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment variables & secrets (Protects GROQ_API_KEY)
+.env
+*.env
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Vector Database & Index Files (FAISS / BM25)
+db/
+*.faiss
+*.pkl
+*.index
+
+# DeepEval Benchmarking & Telemetry Cache
+.deepeval/
+
+# Heavy PDF Datasheets
+data/*.pdf
+
+# Redis Local Storage Dumps
+dump.rdb
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating System Artifacts
+.DS_Store
+Thumbs.db

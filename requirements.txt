@@ -1,0 +1,12 @@
+
+numpy
+rank-bm25
+faiss-cpu
+sentence-transformers
+PyMuPDF
+langchain-core
+groq
+redis
+deepeval
+requests
+
