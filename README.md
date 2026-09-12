@@ -2,7 +2,8 @@ ESP32 Hardware RAG Intelligence 🧠⚡
 
 A production-grade Retrieval-Augmented Generation (RAG) pipeline engineered specifically for embedded systems. This project parses, searches, and reasons over the 700-page ESP32 Technical Reference Manual, addressing the unique challenges of hardware documentation such as dense pinout tables, exact register hex addresses, and complex multi-hop hardware constraints.
 
-🏗️ Core Architecture & Features
+🏗️ Core Architecture & Features:
+
 1.Custom Table Linearization: Utilizes PyMuPDF to programmatically flatten complex multi-column memory and pinout tables, preventing context severing during the PDF ingestion phase.
 
 2.Query Transformation: Intercepts and rewrites raw user prompts into optimized target vectors to improve retrieval accuracy for highly technical hardware queries.
@@ -62,9 +63,11 @@ a.Factual Table & Spec Lookups
 
 b.Hex Addresses & Lexical Matching
 
-c.Safe Rejections / Out-of-Scope Checks
+c.Multi-Hop Architectural Reasoning
 
-d.Executing the Benchmarking Suite triggers DeepEval using a 70B parameter model as an LLM-as-a-Judge to evaluate the pipeline mathematically on Answer Relevancy, Faithfulness, and Contextual Recall.
+d.Safe Rejections / Out-of-Scope Checks
+
+Executing the Benchmarking Suite triggers DeepEval using a 70B parameter model as an LLM-as-a-Judge to evaluate the pipeline mathematically on Answer Relevancy, Faithfulness, and Contextual Recall.
 
 📊 Observability & Telemetry
 The interactive terminal includes a built-in RAG Debugger. 
